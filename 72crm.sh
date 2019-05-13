@@ -22,8 +22,7 @@ fi
 
 # 生成 class path 值
 
-APP_BASE_PATH="./"
-CP=${APP_BASE_PATH1}/config:${APP_BASE_PATH}/lib/*
+CP=./config:./lib/*
 
 function start()
 {
@@ -32,8 +31,8 @@ function start()
 
 function stop()
 {
-    kill `pgrep -f ${APP_BASE_PATH1}` 2>/dev/null
-    kill `pgrep -f ${APP_BASE_PATH2}` 2>/dev/null
+    kill `pgrep -f $MAIN_CLASS` 2>/dev/null
+    kill `pgrep -f $MAIN_CLASS` 2>/dev/null
 }
 
 if [[ "$COMMAND" == "start" ]]; then
