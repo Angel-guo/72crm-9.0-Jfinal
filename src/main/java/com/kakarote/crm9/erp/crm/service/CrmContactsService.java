@@ -160,6 +160,8 @@ public class CrmContactsService {
         String batchId = StrUtil.isNotEmpty(crmContacts.getBatchId()) ? crmContacts.getBatchId() : IdUtil.simpleUUID();
         crmRecordService.updateRecord(jsonObject.getJSONArray("field"),batchId);
         adminFieldService.save(jsonObject.getJSONArray("field"),batchId);
+        crmContacts.setRoUserId(",");
+        crmContacts.setRwUserId(",");
         if (crmContacts.getContactsId() != null) {
             crmContacts.setUpdateTime(DateUtil.date());
             crmRecordService.updateRecord(new CrmContacts().dao().findById(crmContacts.getContactsId()),crmContacts, CrmEnum.CRM_CONTACTS);
