@@ -129,4 +129,20 @@ public abstract class BaseCrmContacts<M extends BaseCrmContacts<M>> extends Mode
 		return getStr("batch_id");
 	}
 
+    public void setRoUserId(java.lang.String roUserId) {
+		set("ro_user_id", roUserId);
+	}
+	
+	public java.lang.String getRoUserId() {
+		return getStr("ro_user_id");
+	}
+
+	public void setRwUserId(java.lang.String rwUserId) {
+		set("rw_user_id", rwUserId);
+	}
+	
+	public java.lang.String getRwUserId() {
+		return getStr("rw_user_id");
+	}
+
 }
