@@ -4,7 +4,7 @@ import cn.hutool.core.util.ClassLoaderUtil;
 import com.jfinal.aop.Aop;
 import com.jfinal.ext.proxy.CglibProxyFactory;
 import com.kakarote.crm9.common.config.cache.CaffeineCache;
-import com.kakarote.crm9.common.config.druid.DruidConfig;
+import com.kakarote.crm9.common.config.druid.DruidConfig;  
 import com.kakarote.crm9.common.config.json.ErpJsonFactory;
 import com.kakarote.crm9.common.config.paragetter.BasePageRequest;
 import com.kakarote.crm9.common.config.paragetter.MapParaGetter;
