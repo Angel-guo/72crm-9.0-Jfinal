@@ -5,7 +5,7 @@ rem
 rem 使用说明：
 rem
 rem 1: 该脚本用于别的项目时只需要修改 MAIN_CLASS 即可运行
-rem
+remvggv 
 rem 2: JAVA_OPTS 可通过 -D 传入 undertow.port 与 undertow.host 这类参数覆盖
 rem    配置文件中的相同值此外还有 undertow.resourcePath, undertow.ioThreads
 rem    undertow.workerThreads 共五个参数可通过 -D 进行传入
